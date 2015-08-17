@@ -1,0 +1,1038 @@
+
+ <div class="fbmSpielerlisteNavi">
+
+ <div id="fbmSplListTitle2"><a class="sel" href="#" onclick="ovTeamChangePlayerList(this,'','','','1');ovTeamMarkSel(this);return false;">Transfermarkt</a><a class="last" href="#" onclick="ovTeamChangePlayerList(this,'','','','2');ovTeamMarkSel(this);return false;">mein Merkzettel</a></div>
+
+
+ <div id="fbmPlayerSearch">
+ <div class="item onerowitem fbmPlayerSearchInput">
+ <input name="ctl00$PlaceHolderNavi$ctl00$inpPlayerSearch" id="ctl00_PlaceHolderNavi_ctl00_inpPlayerSearch" class="inpPlayerSearch" onfocus="onPlayerSearchInputFocus(event, this); return false;" onkeyup="onPlayerSearchInputChange(event, this); return false;" type="text"><span id="ctl00_PlaceHolderNavi_ctl00_LblPlayerSearch" class="caption onerow fbmPlayerSearchLabel">Suche:</span>
+ </div>
+
+ </div>
+ <div class="fbmSplSuche"></div>
+ <div class="sep7"></div>
+
+ <div id="fbmPosNavi" class="fbmSpllisteReiter">
+ <a id="fbmPosNaviTab0" class="" onclick="ovTeamChangePlayerList(this,'1','','','');ovTeamMarkSel(this);return false;" href="#">Tor</a>
+ <a id="fbmPosNaviTab1" class="" onclick="ovTeamChangePlayerList(this,'2','','','');ovTeamMarkSel(this);return false;" href="#">Abwehr</a>
+ <a id="fbmPosNaviTab2" class="" onclick="ovTeamChangePlayerList(this,'3','','','');ovTeamMarkSel(this);return false;" href="#">Mittelfeld</a>
+ <a id="fbmPosNaviTab3" class="last sel" onclick="ovTeamChangePlayerList(this,'4','','','');ovTeamMarkSel(this);return false;" href="#">Sturm</a>
+ </div>
+ <div id="fbmSpielerlisteDD">
+
+ <div class="caption onerow">Verein:</div>
+ <div class="item onerowitem">
+ <div id="dlvrntitle" class="dl_sel" onclick="ShowHideList('vrnlist');" onmouseout="SelectOutList('vrnlist');">Alle</div>
+ <div visible="0" id="vrnlist" class="list" style="display: none; visibility: hidden;">
+ <dl style="height: 285px;" onmouseover="dontCloseSelect()" onmouseout="SelectOutList('vrnlist');">
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','0','','');ShowHideList('vrnlist');return false;">Alle</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','16','','');ShowHideList('vrnlist');return false;">1. FC Köln</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','30','','');ShowHideList('vrnlist');return false;">1. FSV Mainz 05</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','9','','');ShowHideList('vrnlist');return false;">Bayer 04 Leverkusen</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','14','','');ShowHideList('vrnlist');return false;">Bayern München</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','15','','');ShowHideList('vrnlist');return false;">Bor. Mönchengladbach</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','17','','');ShowHideList('vrnlist');return false;">Borussia Dortmund</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','32','','');ShowHideList('vrnlist');return false;">Eintracht Frankfurt</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','91','','');ShowHideList('vrnlist');return false;">FC Augsburg</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','7659','','');ShowHideList('vrnlist');return false;">FC Ingolstadt 04</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','2','','');ShowHideList('vrnlist');return false;">FC Schalke 04</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','12','','');ShowHideList('vrnlist');return false;">Hamburger SV</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','58','','');ShowHideList('vrnlist');return false;">Hannover 96</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','29','','');ShowHideList('vrnlist');return false;">Hertha BSC</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','98','','');ShowHideList('vrnlist');return false;">SV Darmstadt 98</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','3209','','');ShowHideList('vrnlist');return false;">TSG Hoffenheim</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','11','','');ShowHideList('vrnlist');return false;">VfB Stuttgart</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','24','','');ShowHideList('vrnlist');return false;">VfL Wolfsburg</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','4','','');ShowHideList('vrnlist');return false;">Werder Bremen</a></dt>
+
+ </dl>
+ </div>
+ </div>
+
+ <div class="caption onerow">Sortierung:</div>
+ <div class="item onerowitem">
+ <div id="dlsotitle" class="dl_sel" onclick="ShowHideList('sortlist');" onmouseout="SelectOutList('sortlist');">Punkte Vorjahr (absteigend)</div>
+ <div visible="0" id="sortlist" class="list" style="display: none; visibility: hidden;">
+ <dl onmouseover="dontCloseSelect()" onmouseout="SelectOutList('sortlist');">
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','1','');ShowHideList('sortlist');return false;">Name (aufsteigend)</a></dt>
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','2','');ShowHideList('sortlist');return false;">Name (absteigend)</a></dt>
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','3','');ShowHideList('sortlist');return false;">Verein (aufsteigend)</a></dt>
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','4','');ShowHideList('sortlist');return false;">Verein (absteigend)</a></dt>
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','5','');ShowHideList('sortlist');return false;">Marktwert (aufsteigend)</a></dt>
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','6','');ShowHideList('sortlist');return false;">Marktwert (absteigend)</a></dt>
+
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','7','');ShowHideList('sortlist');return false;">Punkte Vorjahr (aufsteigend)</a></dt>
+ <dt><a href="#" onclick="ovTeamChangePlayerList(this,'','','8','');ShowHideList('sortlist');return false;">Punkte Vorjahr (absteigend)</a></dt>
+
+ </dl>
+ </div>
+ </div>
+ </div>
+ </div>
+
+
+ <div id="playerlist" class="playerlist">
+
+ <div class="hover" style="position: relative;" id="slidcont">
+ <div id="playerlist_container" class="playerlistposition" style="position: relative; left: 0px; z-index: 10; width: 11760px;">
+        <div class="pli" id="pli_57602">
+            <div class="ple_4_clone" id="pelemId_57602_clone">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/57602_9_2015714154939950.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/57602" target="_blank">Bellarabi</a>
+                <span class="vrn">Leverkusen<br></span>
+                <span class="wert"><b>5,8</b> Mio</span><span class="pkt">| PV: <b>222</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(57602);return false;" href="#">merken</a>
+                <input value="{'splid':'57602','wert':'5800','pkt':'| PV: <b>222</b>','vrnid':'9','vrn':'Leverkusen','uefa':'1','spl':'Bellarabi','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/57602_9_2015714154939950.jpg','splf':'bellarabi-karim','vrnf':'bayer-leverkusen-9'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_41678">
+            <div class="ple_4_clone" id="pelemId_41678_clone">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/41678_24_2015720145231864.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/41678" target="_blank">Kruse</a>
+                <span class="vrn">Wolfsburg<br></span>
+                <span class="wert"><b>7,5</b> Mio</span><span class="pkt">| PV: <b>172</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(41678);return false;" href="#">merken</a>
+                <input value="{'splid':'41678','wert':'7500','pkt':'| PV: <b>172</b>','vrnid':'24','vrn':'Wolfsburg','uefa':'1','spl':'Kruse','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/41678_24_2015720145231864.jpg','splf':'max-kruse','vrnf':'vfl-wolfsburg-24'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_51570">
+            <div style="position: relative;" class="ple_4" id="pelemId_51570">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/51570_14_2015720145243156.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/51570" target="_blank">Lewandowski</a>
+                <span class="vrn">Bayern<br></span>
+                <span class="wert"><b>8,5</b> Mio</span><span class="pkt">| PV: <b>166</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(51570);return false;" href="#">merken</a>
+                <input value="{'splid':'51570','wert':'8500','pkt':'| PV: <b>166</b>','vrnid':'14','vrn':'Bayern','uefa':'1','spl':'Lewandowski','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/51570_14_2015720145243156.jpg','splf':'robert-lewandowski','vrnf':'bayern-muenchen-14'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_58396">
+            <div style="position: relative;" class="ple_4" id="pelemId_58396">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/58396_17_201572014524949.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/58396" target="_blank">Aubameyang</a>
+                <span class="vrn">Dortmund<br></span>
+                <span class="wert"><b>7,0</b> Mio</span><span class="pkt">| PV: <b>154</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(58396);return false;" href="#">merken</a>
+                <input value="{'splid':'58396','wert':'7000','pkt':'| PV: <b>154</b>','vrnid':'17','vrn':'Dortmund','uefa':'1','spl':'Aubameyang','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/58396_17_201572014524949.jpg','splf':'aubameyang-pierre-emerick','vrnf':'borussia-dortmund-17'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_48998">
+            <div style="position: relative;" class="ple_4" id="pelemId_48998">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/48998_3209_2015811115552309.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/48998" target="_blank">Volland</a>
+                <span class="vrn">Hoffenheim<br></span>
+                <span class="wert"><b>5,5</b> Mio</span><span class="pkt">| PV: <b>147</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(48998);return false;" href="#">merken</a>
+                <input value="{'splid':'48998','wert':'5500','pkt':'| PV: <b>147</b>','vrnid':'3209','vrn':'Hoffenheim','uefa':'1','spl':'Volland','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/48998_3209_2015811115552309.jpg','splf':'kevin-volland','vrnf':'1899-hoffenheim-3209'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_44484">
+            <div style="position: relative;" class="ple_4" id="pelemId_44484">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/44484_15_201571484641475.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/44484" target="_blank">Raffael</a>
+                <span class="vrn">Gladbach<br></span>
+                <span class="wert"><b>5,0</b> Mio</span><span class="pkt">| PV: <b>145</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(44484);return false;" href="#">merken</a>
+                <input value="{'splid':'44484','wert':'5000','pkt':'| PV: <b>145</b>','vrnid':'15','vrn':'Gladbach','uefa':'0','spl':'Raffael','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/44484_15_201571484641475.jpg','splf':'raffael','vrnf':'borussia-mgladbach-15'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_27813">
+            <div style="position: relative;" class="ple_4" id="pelemId_27813">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/27813_32_201572014529797.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/27813" target="_blank">Meier</a>
+                <span class="vrn">E. Frankfurt<br></span>
+                <span class="wert"><b>4,5</b> Mio</span><span class="pkt">| PV: <b>143</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(27813);return false;" href="#">merken</a>
+                <input value="{'splid':'27813','wert':'4500','pkt':'| PV: <b>143</b>','vrnid':'32','vrn':'E. Frankfurt','uefa':'1','spl':'Meier','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/27813_32_201572014529797.jpg','splf':'alexander-meier','vrnf':'eintracht-frankfurt-32'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_73112">
+            <div style="position: relative;" class="ple_4" id="pelemId_73112">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/73112_24_2015720145311736.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/73112" target="_blank">Dost</a>
+                <span class="vrn">Wolfsburg<br></span>
+                <span class="wert"><b>4,2</b> Mio</span><span class="pkt">| PV: <b>141</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(73112);return false;" href="#">merken</a>
+                <input value="{'splid':'73112','wert':'4200','pkt':'| PV: <b>141</b>','vrnid':'24','vrn':'Wolfsburg','uefa':'1','spl':'Dost','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/73112_24_2015720145311736.jpg','splf':'dost-bas','vrnf':'vfl-wolfsburg-24'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_54727">
+            <div style="position: relative;" class="ple_4" id="pelemId_54727">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/54727_91_2015811115554523.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/54727" target="_blank">Bobadilla</a>
+                <span class="vrn">Augsburg<br></span>
+                <span class="wert"><b>3,4</b> Mio</span><span class="pkt">| PV: <b>131</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(54727);return false;" href="#">merken</a>
+                <input value="{'splid':'54727','wert':'3400','pkt':'| PV: <b>131</b>','vrnid':'91','vrn':'Augsburg','uefa':'0','spl':'Bobadilla','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/54727_91_2015811115554523.jpg','splf':'bobadilla-raul-marcelo','vrnf':'fc-augsburg-91'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_69265">
+            <div style="position: relative;" class="ple_4" id="pelemId_69265">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/69265_4_201571484658714.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/69265" target="_blank">Ujah</a>
+                <span class="vrn">Bremen<br></span>
+                <span class="wert"><b>3,0</b> Mio</span><span class="pkt">| PV: <b>117</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(69265);return false;" href="#">merken</a>
+                <input value="{'splid':'69265','wert':'3000','pkt':'| PV: <b>117</b>','vrnid':'4','vrn':'Bremen','uefa':'0','spl':'Ujah','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/69265_4_201571484658714.jpg','splf':'ujah-anthony','vrnf':'werder-bremen-4'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_51072">
+            <div style="position: relative;" class="ple_4" id="pelemId_51072">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/51072_2_2015729103054100.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/51072" target="_blank">di Santo</a>
+                <span class="vrn">Schalke<br></span>
+                <span class="wert"><b>4,0</b> Mio</span><span class="pkt">| PV: <b>111</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(51072);return false;" href="#">merken</a>
+                <input value="{'splid':'51072','wert':'4000','pkt':'| PV: <b>111</b>','vrnid':'2','vrn':'Schalke','uefa':'0','spl':'di Santo','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/51072_2_2015729103054100.jpg','splf':'franco-di-santo','vrnf':'fc-schalke-04-2'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_29567">
+            <div style="position: relative;" class="ple_4" id="pelemId_29567">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/29567_9_2015714154930896.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/29567" target="_blank">Kießling</a>
+                <span class="vrn">Leverkusen<br></span>
+                <span class="wert"><b>5,0</b> Mio</span><span class="pkt">| PV: <b>107</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(29567);return false;" href="#">merken</a>
+                <input value="{'splid':'29567','wert':'5000','pkt':'| PV: <b>107</b>','vrnid':'9','vrn':'Leverkusen','uefa':'1','spl':'Kießling','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/29567_9_2015714154930896.jpg','splf':'stefan-kiessling','vrnf':'bayer-leverkusen-9'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_63656">
+            <div style="position: relative;" class="ple_4" id="pelemId_63656">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/63656_9_2015714154941672.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/63656" target="_blank">Son</a>
+                <span class="vrn">Leverkusen<br></span>
+                <span class="wert"><b>3,2</b> Mio</span><span class="pkt">| PV: <b>85</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(63656);return false;" href="#">merken</a>
+                <input value="{'splid':'63656','wert':'3200','pkt':'| PV: <b>85</b>','vrnid':'9','vrn':'Leverkusen','uefa':'0','spl':'Son','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/63656_9_2015714154941672.jpg','splf':'son-heung-min','vrnf':'bayer-leverkusen-9'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_42607">
+            <div style="position: relative;" class="ple_4" id="pelemId_42607">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/42607_2_2015720145233669.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/42607" target="_blank">Choupo-Moti.</a>
+                <span class="vrn">Schalke<br></span>
+                <span class="wert"><b>4,0</b> Mio</span><span class="pkt">| PV: <b>82</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(42607);return false;" href="#">merken</a>
+                <input value="{'splid':'42607','wert':'4000','pkt':'| PV: <b>82</b>','vrnid':'2','vrn':'Schalke','uefa':'1','spl':'Choupo-Moti.','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/42607_2_2015720145233669.jpg','splf':'eric-maxim-choupo-moting','vrnf':'fc-schalke-04-2'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_57341">
+            <div style="position: relative;" class="ple_4" id="pelemId_57341">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/57341_32_2015720145247132.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/57341" target="_blank">Seferovic</a>
+                <span class="vrn">E. Frankfurt<br></span>
+                <span class="wert"><b>3,0</b> Mio</span><span class="pkt">| PV: <b>78</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(57341);return false;" href="#">merken</a>
+                <input value="{'splid':'57341','wert':'3000','pkt':'| PV: <b>78</b>','vrnid':'32','vrn':'E. Frankfurt','uefa':'1','spl':'Seferovic','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/57341_32_2015720145247132.jpg','splf':'seferovic-haris','vrnf':'eintracht-frankfurt-32'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_50433">
+            <div style="position: relative;" class="ple_4" id="pelemId_50433">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/50433_15_201571484645435.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/50433" target="_blank">Hahn</a>
+                <span class="vrn">Gladbach<br></span>
+                <span class="wert"><b>2,8</b> Mio</span><span class="pkt">| PV: <b>65</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(50433);return false;" href="#">merken</a>
+                <input value="{'splid':'50433','wert':'2800','pkt':'| PV: <b>65</b>','vrnid':'15','vrn':'Gladbach','uefa':'1','spl':'Hahn','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/50433_15_201571484645435.jpg','splf':'andre-hahn','vrnf':'borussia-mgladbach-15'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_68578">
+            <div style="position: relative;" class="ple_4" id="pelemId_68578">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/68578_9_2015714154943668.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/68578" target="_blank">Brandt</a>
+                <span class="vrn">Leverkusen<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b>59</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(68578);return false;" href="#">merken</a>
+                <input value="{'splid':'68578','wert':'2000','pkt':'| PV: <b>59</b>','vrnid':'9','vrn':'Leverkusen','uefa':'1','spl':'Brandt','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/68578_9_2015714154943668.jpg','splf':'brandt-julian','vrnf':'bayer-leverkusen-9'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_48288">
+            <div style="position: relative;" class="ple_4" id="pelemId_48288">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/48288_11_2015720145238995.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/48288" target="_blank">Ginczek</a>
+                <span class="vrn">VfB<br></span>
+                <span class="wert"><b>3,8</b> Mio</span><span class="pkt">| PV: <b>57</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(48288);return false;" href="#">merken</a>
+                <input value="{'splid':'48288','wert':'3800','pkt':'| PV: <b>57</b>','vrnid':'11','vrn':'VfB','uefa':'1','spl':'Ginczek','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/48288_11_2015720145238995.jpg','splf':'daniel-ginczek','vrnf':'vfb-stuttgart-11'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_69186">
+            <div style="position: relative;" class="ple_4" id="pelemId_69186">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/69186_15_201571484658457.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/69186" target="_blank">Drmic</a>
+                <span class="vrn">Gladbach<br></span>
+                <span class="wert"><b>4,8</b> Mio</span><span class="pkt">| PV: <b>56</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(69186);return false;" href="#">merken</a>
+                <input value="{'splid':'69186','wert':'4800','pkt':'| PV: <b>56</b>','vrnid':'15','vrn':'Gladbach','uefa':'1','spl':'Drmic','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/69186_15_201571484658457.jpg','splf':'drmic-josip','vrnf':'borussia-mgladbach-15'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_65936">
+            <div style="position: relative;" class="ple_4" id="pelemId_65936">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/65936_16_2015713113835435.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/65936" target="_blank">Modeste</a>
+                <span class="vrn">Köln<br></span>
+                <span class="wert"><b>2,5</b> Mio</span><span class="pkt">| PV: <b>53</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(65936);return false;" href="#">merken</a>
+                <input value="{'splid':'65936','wert':'2500','pkt':'| PV: <b>53</b>','vrnid':'16','vrn':'Köln','uefa':'1','spl':'Modeste','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/65936_16_2015713113835435.jpg','splf':'modeste-anthony','vrnf':'1-fc-koeln-16'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_78876">
+            <div style="position: relative;" class="ple_4" id="pelemId_78876">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/78876_16_2015713113858745.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/78876" target="_blank">Osako</a>
+                <span class="vrn">Köln<br></span>
+                <span class="wert"><b>1,8</b> Mio</span><span class="pkt">| PV: <b>48</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(78876);return false;" href="#">merken</a>
+                <input value="{'splid':'78876','wert':'1800','pkt':'| PV: <b>48</b>','vrnid':'16','vrn':'Köln','uefa':'0','spl':'Osako','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/78876_16_2015713113858745.jpg','splf':'osako-yuya','vrnf':'1-fc-koeln-16'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_81849">
+            <div style="position: relative;" class="ple_4" id="pelemId_81849">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/81849_30_201571484776.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/81849" target="_blank">De Blasis</a>
+                <span class="vrn">Mainz<br></span>
+                <span class="wert"><b>2,4</b> Mio</span><span class="pkt">| PV: <b>48</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(81849);return false;" href="#">merken</a>
+                <input value="{'splid':'81849','wert':'2400','pkt':'| PV: <b>48</b>','vrnid':'30','vrn':'Mainz','uefa':'0','spl':'De Blasis','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/81849_30_201571484776.jpg','splf':'de-blasis-pablo','vrnf':'1-fsv-mainz-05-30'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_22646">
+            <div style="position: relative;" class="ple_4" id="pelemId_22646">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/22646_12_2015720145052110.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/22646" target="_blank">Olic</a>
+                <span class="vrn">HSV<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b>44</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(22646);return false;" href="#">merken</a>
+                <input value="{'splid':'22646','wert':'2000','pkt':'| PV: <b>44</b>','vrnid':'12','vrn':'HSV','uefa':'1','spl':'Olic','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/22646_12_2015720145052110.jpg','splf':'ivica-olic','vrnf':'hamburger-sv-12'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_39152">
+            <div style="position: relative;" class="ple_4" id="pelemId_39152">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/39152_11_2015720145224798.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/39152" target="_blank">Harnik</a>
+                <span class="vrn">VfB<br></span>
+                <span class="wert"><b>2,8</b> Mio</span><span class="pkt">| PV: <b>42</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(39152);return false;" href="#">merken</a>
+                <input value="{'splid':'39152','wert':'2800','pkt':'| PV: <b>42</b>','vrnid':'11','vrn':'VfB','uefa':'1','spl':'Harnik','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/39152_11_2015720145224798.jpg','splf':'martin-harnik','vrnf':'vfb-stuttgart-11'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_51660">
+            <div style="position: relative;" class="ple_4" id="pelemId_51660">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/51660_9_2015714154939490.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/51660" target="_blank">Mehmedi</a>
+                <span class="vrn">Leverkusen<br></span>
+                <span class="wert"><b>2,8</b> Mio</span><span class="pkt">| PV: <b>41</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(51660);return false;" href="#">merken</a>
+                <input value="{'splid':'51660','wert':'2800','pkt':'| PV: <b>41</b>','vrnid':'9','vrn':'Leverkusen','uefa':'1','spl':'Mehmedi','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/51660_9_2015714154939490.jpg','splf':'admir-mehmedi','vrnf':'bayer-leverkusen-9'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_33715">
+            <div style="position: relative;" class="ple_4" id="pelemId_33715">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/33715_29_201571484630455.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/33715" target="_blank">Kalou</a>
+                <span class="vrn">Hertha<br></span>
+                <span class="wert"><b>2,2</b> Mio</span><span class="pkt">| PV: <b>36</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(33715);return false;" href="#">merken</a>
+                <input value="{'splid':'33715','wert':'2200','pkt':'| PV: <b>36</b>','vrnid':'29','vrn':'Hertha','uefa':'0','spl':'Kalou','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/33715_29_201571484630455.jpg','splf':'salomon-kalou','vrnf':'hertha-bsc-29'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_28674">
+            <div style="position: relative;" class="ple_4" id="pelemId_28674">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/28674_2_2015720145211732.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/28674" target="_blank">Huntelaar</a>
+                <span class="vrn">Schalke<br></span>
+                <span class="wert"><b>4,7</b> Mio</span><span class="pkt">| PV: <b>35</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(28674);return false;" href="#">merken</a>
+                <input value="{'splid':'28674','wert':'4700','pkt':'| PV: <b>35</b>','vrnid':'2','vrn':'Schalke','uefa':'1','spl':'Huntelaar','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/28674_2_2015720145211732.jpg','splf':'klaas-jan-huntelaar','vrnf':'fc-schalke-04-2'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_45090">
+            <div style="position: relative;" class="ple_4" id="pelemId_45090">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/45090_12_2015729103051573.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/45090" target="_blank">Schipplock</a>
+                <span class="vrn">HSV<br></span>
+                <span class="wert"><b>1,8</b> Mio</span><span class="pkt">| PV: <b>34</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(45090);return false;" href="#">merken</a>
+                <input value="{'splid':'45090','wert':'1800','pkt':'| PV: <b>34</b>','vrnid':'12','vrn':'HSV','uefa':'1','spl':'Schipplock','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/45090_12_2015729103051573.jpg','splf':'sven-schipplock','vrnf':'hamburger-sv-12'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_49571">
+            <div style="position: relative;" class="ple_4" id="pelemId_49571">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/49571_29_201571484645183.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/49571" target="_blank">Schieber</a>
+                <span class="vrn">Hertha<br></span>
+                <span class="wert"><b>2,2</b> Mio</span><span class="pkt">| PV: <b>30</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(49571);return false;" href="#">merken</a>
+                <input value="{'splid':'49571','wert':'2200','pkt':'| PV: <b>30</b>','vrnid':'29','vrn':'Hertha','uefa':'1','spl':'Schieber','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/49571_29_201571484645183.jpg','splf':'julian-schieber','vrnf':'hertha-bsc-29'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_44518">
+            <div style="position: relative;" class="ple_4" id="pelemId_44518">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/44518_91_201571311389854.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/44518" target="_blank">Matavz</a>
+                <span class="vrn">Augsburg<br></span>
+                <span class="wert"><b>1,5</b> Mio</span><span class="pkt">| PV: <b>23</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(44518);return false;" href="#">merken</a>
+                <input value="{'splid':'44518','wert':'1500','pkt':'| PV: <b>23</b>','vrnid':'91','vrn':'Augsburg','uefa':'1','spl':'Matavz','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/44518_91_201571311389854.jpg','splf':'tim-matavz','vrnf':'fc-augsburg-91'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_73214">
+            <div style="position: relative;" class="ple_4" id="pelemId_73214">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/73214_15_20157148470937.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/73214" target="_blank">Hrgota</a>
+                <span class="vrn">Gladbach<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b>22</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(73214);return false;" href="#">merken</a>
+                <input value="{'splid':'73214','wert':'1200','pkt':'| PV: <b>22</b>','vrnid':'15','vrn':'Gladbach','uefa':'1','spl':'Hrgota','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/73214_15_20157148470937.jpg','splf':'hrgota-branimir','vrnf':'borussia-mgladbach-15'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_79543">
+            <div style="position: relative;" class="ple_4" id="pelemId_79543">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/79543_2_2015720145320284.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/79543" target="_blank">Sané</a>
+                <span class="vrn">Schalke<br></span>
+                <span class="wert"><b>0,8</b> Mio</span><span class="pkt">| PV: <b>22</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(79543);return false;" href="#">merken</a>
+                <input value="{'splid':'79543','wert':'800','pkt':'| PV: <b>22</b>','vrnid':'2','vrn':'Schalke','uefa':'1','spl':'Sané','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/79543_2_2015720145320284.jpg','splf':'sane-leroy','vrnf':'fc-schalke-04-2'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_44162">
+            <div style="position: relative;" class="ple_4" id="pelemId_44162">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/44162_91_201571311389119.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/44162" target="_blank">Mölders</a>
+                <span class="vrn">Augsburg<br></span>
+                <span class="wert"><b>0,8</b> Mio</span><span class="pkt">| PV: <b>15</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(44162);return false;" href="#">merken</a>
+                <input value="{'splid':'44162','wert':'800','pkt':'| PV: <b>15</b>','vrnid':'91','vrn':'Augsburg','uefa':'1','spl':'Mölders','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/44162_91_201571311389119.jpg','splf':'sascha-moelders','vrnf':'fc-augsburg-91'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_64322">
+            <div style="position: relative;" class="ple_4" id="pelemId_64322">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/64322_58_2015714154942679.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/64322" target="_blank">Sobiech</a>
+                <span class="vrn">Hannover<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b>14</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(64322);return false;" href="#">merken</a>
+                <input value="{'splid':'64322','wert':'1200','pkt':'| PV: <b>14</b>','vrnid':'58','vrn':'Hannover','uefa':'1','spl':'Sobiech','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/64322_58_2015714154942679.jpg','splf':'sobiech-artur','vrnf':'hannover-96-58'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_40709">
+            <div style="position: relative;" class="ple_4" id="pelemId_40709">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/40709_3209_2015715111344666.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/40709" target="_blank">Szalai</a>
+                <span class="vrn">Hoffenheim<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b>13</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(40709);return false;" href="#">merken</a>
+                <input value="{'splid':'40709','wert':'2000','pkt':'| PV: <b>13</b>','vrnid':'3209','vrn':'Hoffenheim','uefa':'1','spl':'Szalai','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/40709_3209_2015715111344666.jpg','splf':'adam-szalai','vrnf':'1899-hoffenheim-3209'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_41189">
+            <div style="position: relative;" class="ple_4" id="pelemId_41189">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/41189_29_20157148463812.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/41189" target="_blank">Allagui</a>
+                <span class="vrn">Hertha<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b>12</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(41189);return false;" href="#">merken</a>
+                <input value="{'splid':'41189','wert':'2000','pkt':'| PV: <b>12</b>','vrnid':'29','vrn':'Hertha','uefa':'1','spl':'Allagui','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/41189_29_20157148463812.jpg','splf':'sami-allagui','vrnf':'hertha-bsc-29'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_43606">
+            <div style="position: relative;" class="ple_4" id="pelemId_43606">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/43606_7659_201571311387627.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/43606" target="_blank">Kachunga</a>
+                <span class="vrn">Ingolstadt<br></span>
+                <span class="wert"><b>1,4</b> Mio</span><span class="pkt">| PV: <b>11</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(43606);return false;" href="#">merken</a>
+                <input value="{'splid':'43606','wert':'1400','pkt':'| PV: <b>11</b>','vrnid':'7659','vrn':'Ingolstadt','uefa':'1','spl':'Kachunga','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/43606_7659_201571311387627.jpg','splf':'elias-kachunga','vrnf':'fc-ingolstadt-04-7659'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_58837">
+            <div style="position: relative;" class="ple_4" id="pelemId_58837">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/58837_32_2015720145250374.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/58837" target="_blank">Kadlec</a>
+                <span class="vrn">E. Frankfurt<br></span>
+                <span class="wert"><b>1,6</b> Mio</span><span class="pkt">| PV: <b>10</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(58837);return false;" href="#">merken</a>
+                <input value="{'splid':'58837','wert':'1600','pkt':'| PV: <b>10</b>','vrnid':'32','vrn':'E. Frankfurt','uefa':'1','spl':'Kadlec','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/58837_32_2015720145250374.jpg','splf':'kadlec-vaclav','vrnf':'eintracht-frankfurt-32'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_80844">
+            <div style="position: relative;" class="ple_4" id="pelemId_80844">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/80844_16_20157131139598.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/80844" target="_blank">Finne</a>
+                <span class="vrn">Köln<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b>10</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(80844);return false;" href="#">merken</a>
+                <input value="{'splid':'80844','wert':'1200','pkt':'| PV: <b>10</b>','vrnid':'16','vrn':'Köln','uefa':'1','spl':'Finne','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/80844_16_20157131139598.jpg','splf':'finne-bard','vrnf':'1-fc-koeln-16'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_40133">
+            <div style="position: relative;" class="ple_4" id="pelemId_40133">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/40133_98_2015811115549973.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/40133" target="_blank">Wagner</a>
+                <span class="vrn">Darmstadt<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b>9</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(40133);return false;" href="#">merken</a>
+                <input value="{'splid':'40133','wert':'1200','pkt':'| PV: <b>9</b>','vrnid':'98','vrn':'Darmstadt','uefa':'1','spl':'Wagner','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/40133_98_2015811115549973.jpg','splf':'sandro-wagner','vrnf':'sv-darmstadt-98-98'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_38248">
+            <div style="position: relative;" class="ple_4" id="pelemId_38248">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/38248_24_2015720145223273.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/38248" target="_blank">Bendtner</a>
+                <span class="vrn">Wolfsburg<br></span>
+                <span class="wert"><b>1,0</b> Mio</span><span class="pkt">| PV: <b>8</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(38248);return false;" href="#">merken</a>
+                <input value="{'splid':'38248','wert':'1000','pkt':'| PV: <b>8</b>','vrnid':'24','vrn':'Wolfsburg','uefa':'1','spl':'Bendtner','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/38248_24_2015720145223273.jpg','splf':'nicklas-bendtner','vrnf':'vfl-wolfsburg-24'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_59098">
+            <div style="position: relative;" class="ple_4" id="pelemId_59098">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/59098_17_2015720145251139.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/59098" target="_blank">Ramos</a>
+                <span class="vrn">Dortmund<br></span>
+                <span class="wert"><b>2,8</b> Mio</span><span class="pkt">| PV: <b>6</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(59098);return false;" href="#">merken</a>
+                <input value="{'splid':'59098','wert':'2800','pkt':'| PV: <b>6</b>','vrnid':'17','vrn':'Dortmund','uefa':'0','spl':'Ramos','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/59098_17_2015720145251139.jpg','splf':'ramos-adrian','vrnf':'borussia-dortmund-17'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_67339">
+            <div style="position: relative;" class="ple_4" id="pelemId_67339">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/67339_9_2015714154943420.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/67339" target="_blank">Kruse</a>
+                <span class="vrn">Leverkusen<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b>5</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(67339);return false;" href="#">merken</a>
+                <input value="{'splid':'67339','wert':'1200','pkt':'| PV: <b>5</b>','vrnid':'9','vrn':'Leverkusen','uefa':'0','spl':'Kruse','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/67339_9_2015714154943420.jpg','splf':'kruse-robbie-thomas','vrnf':'bayer-leverkusen-9'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_72475">
+            <div style="position: relative;" class="ple_4" id="pelemId_72475">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/72475_58_2015714154945620.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/72475" target="_blank">Karaman</a>
+                <span class="vrn">Hannover<br></span>
+                <span class="wert"><b>0,6</b> Mio</span><span class="pkt">| PV: <b>5</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(72475);return false;" href="#">merken</a>
+                <input value="{'splid':'72475','wert':'600','pkt':'| PV: <b>5</b>','vrnid':'58','vrn':'Hannover','uefa':'1','spl':'Karaman','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/72475_58_2015714154945620.jpg','splf':'karaman-kenan','vrnf':'hannover-96-58'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_70598">
+            <div style="position: relative;" class="ple_4" id="pelemId_70598">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/70598_32_201572014537135.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/70598" target="_blank">Waldschmidt</a>
+                <span class="vrn">E. Frankfurt<br></span>
+                <span class="wert"><b>0,6</b> Mio</span><span class="pkt">| PV: <b>2</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(70598);return false;" href="#">merken</a>
+                <input value="{'splid':'70598','wert':'600','pkt':'| PV: <b>2</b>','vrnid':'32','vrn':'E. Frankfurt','uefa':'1','spl':'Waldschmidt','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/70598_32_201572014537135.jpg','splf':'waldschmidt-gian-luca','vrnf':'eintracht-frankfurt-32'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_78024">
+            <div style="position: relative;" class="ple_4" id="pelemId_78024">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/78024_4_20157148474213.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/78024" target="_blank">Lorenzen</a>
+                <span class="vrn">Bremen<br></span>
+                <span class="wert"><b>0,8</b> Mio</span><span class="pkt">| PV: <b>1</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(78024);return false;" href="#">merken</a>
+                <input value="{'splid':'78024','wert':'800','pkt':'| PV: <b>1</b>','vrnid':'4','vrn':'Bremen','uefa':'1','spl':'Lorenzen','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/78024_4_20157148474213.jpg','splf':'lorenzen-melvyn','vrnf':'werder-bremen-4'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_79541">
+            <div style="position: relative;" class="ple_4" id="pelemId_79541">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/79541_2_201572014532045.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/79541" target="_blank">Platte</a>
+                <span class="vrn">Schalke<br></span>
+                <span class="wert"><b>0,4</b> Mio</span><span class="pkt">| PV: <b>1</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(79541);return false;" href="#">merken</a>
+                <input value="{'splid':'79541','wert':'400','pkt':'| PV: <b>1</b>','vrnid':'2','vrn':'Schalke','uefa':'1','spl':'Platte','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/79541_2_201572014532045.jpg','splf':'platte-felix','vrnf':'fc-schalke-04-2'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_57250">
+            <div style="position: relative;" class="ple_4" id="pelemId_57250">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/57250_14_201581111555595.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/57250" target="_blank">Weihrauch</a>
+                <span class="vrn">Bayern<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b>0</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(57250);return false;" href="#">merken</a>
+                <input value="{'splid':'57250','wert':'200','pkt':'| PV: <b>0</b>','vrnid':'14','vrn':'Bayern','uefa':'1','spl':'Weihrauch','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/57250_14_201581111555595.jpg','splf':'weihrauch-patrick','vrnf':'bayern-muenchen-14'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_75858">
+            <div class="ple_4_clone" id="pelemId_75858_clone">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/75858_15_20157148471770.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/75858" target="_blank">Ritter</a>
+                <span class="vrn">Gladbach<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b>0</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(75858);return false;" href="#">merken</a>
+                <input value="{'splid':'75858','wert':'200','pkt':'| PV: <b>0</b>','vrnid':'15','vrn':'Gladbach','uefa':'1','spl':'Ritter','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/75858_15_20157148471770.jpg','splf':'ritter-marlon','vrnf':'borussia-mgladbach-15'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_77804">
+            <div style="position: relative;" class="ple_4" id="pelemId_77804">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/77804_24_2015720145317676.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/77804" target="_blank">Zawada</a>
+                <span class="vrn">Wolfsburg<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b>0</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(77804);return false;" href="#">merken</a>
+                <input value="{'splid':'77804','wert':'200','pkt':'| PV: <b>0</b>','vrnid':'24','vrn':'Wolfsburg','uefa':'1','spl':'Zawada','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/77804_24_2015720145317676.jpg','splf':'zawada-oskar','vrnf':'vfl-wolfsburg-24'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_31756">
+            <div style="position: relative;" class="ple_4" id="pelemId_31756">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/31756_11_2015720145216115.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/31756" target="_blank">Ibisevic</a>
+                <span class="vrn">VfB<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b>-1</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(31756);return false;" href="#">merken</a>
+                <input value="{'splid':'31756','wert':'2000','pkt':'| PV: <b>-1</b>','vrnid':'11','vrn':'VfB','uefa':'0','spl':'Ibisevic','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/31756_11_2015720145216115.jpg','splf':'vedad-ibisevic','vrnf':'vfb-stuttgart-11'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_67059">
+            <div style="position: relative;" class="ple_4" id="pelemId_67059">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/67059_14_201572014531514.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/67059" target="_blank">Kurt</a>
+                <span class="vrn">Bayern<br></span>
+                <span class="wert"><b>0,5</b> Mio</span><span class="pkt">| PV: <b>-1</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(67059);return false;" href="#">merken</a>
+                <input value="{'splid':'67059','wert':'500','pkt':'| PV: <b>-1</b>','vrnid':'14','vrn':'Bayern','uefa':'1','spl':'Kurt','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/67059_14_201572014531514.jpg','splf':'kurt-sinan','vrnf':'bayern-muenchen-14'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_70160">
+            <div class="ple_4_clone" id="pelemId_70160_clone">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/70160_11_20157201453696.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/70160" target="_blank">Kiesewetter</a>
+                <span class="vrn">VfB<br></span>
+                <span class="wert"><b>0,3</b> Mio</span><span class="pkt">| PV: <b>-4</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(70160);return false;" href="#">merken</a>
+                <input value="{'splid':'70160','wert':'300','pkt':'| PV: <b>-4</b>','vrnid':'11','vrn':'VfB','uefa':'1','spl':'Kiesewetter','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/70160_11_20157201453696.jpg','splf':'kiesewetter-jerome-julien','vrnf':'vfb-stuttgart-11'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_39177">
+            <div style="position: relative;" class="ple_4" id="pelemId_39177">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/39177_2_2015811115549528.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/39177" target="_blank">Sam</a>
+                <span class="vrn">Schalke<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b>-9</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(39177);return false;" href="#">merken</a>
+                <input value="{'splid':'39177','wert':'2000','pkt':'| PV: <b>-9</b>','vrnid':'2','vrn':'Schalke','uefa':'1','spl':'Sam','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/39177_2_2015811115549528.jpg','splf':'sidney-sam','vrnf':'fc-schalke-04-2'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_54894">
+            <div style="position: relative;" class="ple_4" id="pelemId_54894">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/54894_16_2015713113824775.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/54894" target="_blank">Zoller</a>
+                <span class="vrn">Köln<br></span>
+                <span class="wert"><b>1,4</b> Mio</span><span class="pkt">| PV: <b>-9</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(54894);return false;" href="#">merken</a>
+                <input value="{'splid':'54894','wert':'1400','pkt':'| PV: <b>-9</b>','vrnid':'16','vrn':'Köln','uefa':'1','spl':'Zoller','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/54894_16_2015713113824775.jpg','splf':'zoller-simon','vrnf':'1-fc-koeln-16'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_49504">
+            <div style="position: relative;" class="ple_4" id="pelemId_49504">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/49504_12_2015720145240243.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/49504" target="_blank">Lasogga</a>
+                <span class="vrn">HSV<br></span>
+                <span class="wert"><b>3,2</b> Mio</span><span class="pkt">| PV: <b>-11</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(49504);return false;" href="#">merken</a>
+                <input value="{'splid':'49504','wert':'3200','pkt':'| PV: <b>-11</b>','vrnid':'12','vrn':'HSV','uefa':'1','spl':'Lasogga','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/49504_12_2015720145240243.jpg','splf':'pierre-lasogga','vrnf':'hamburger-sv-12'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_54614">
+            <div style="position: relative;" class="ple_4" id="pelemId_54614">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/54614_12_2015720145243848.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/54614" target="_blank">Rudnevs</a>
+                <span class="vrn">HSV<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b>-16</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(54614);return false;" href="#">merken</a>
+                <input value="{'splid':'54614','wert':'1200','pkt':'| PV: <b>-16</b>','vrnid':'12','vrn':'HSV','uefa':'1','spl':'Rudnevs','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/54614_12_2015720145243848.jpg','splf':'artjoms-rudnevs','vrnf':'hamburger-sv-12'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_67074">
+            <div style="position: relative;" class="ple_4" id="pelemId_67074">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/67074_11_20157201453237.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/67074" target="_blank">Werner</a>
+                <span class="vrn">VfB<br></span>
+                <span class="wert"><b>1,4</b> Mio</span><span class="pkt">| PV: <b>-18</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(67074);return false;" href="#">merken</a>
+                <input value="{'splid':'67074','wert':'1400','pkt':'| PV: <b>-18</b>','vrnid':'11','vrn':'VfB','uefa':'1','spl':'Werner','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/67074_11_20157201453237.jpg','splf':'werner-timo','vrnf':'vfb-stuttgart-11'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_67399">
+            <div style="position: relative;" class="ple_4" id="pelemId_67399">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/67399_91_2015811115558378.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/67399" target="_blank">Ji</a>
+                <span class="vrn">Augsburg<br></span>
+                <span class="wert"><b>1,6</b> Mio</span><span class="pkt">| PV: <b>-19</b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(67399);return false;" href="#">merken</a>
+                <input value="{'splid':'67399','wert':'1600','pkt':'| PV: <b>-19</b>','vrnid':'91','vrn':'Augsburg','uefa':'0','spl':'Ji','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/67399_91_2015811115558378.jpg','splf':'ji-dong-won','vrnf':'fc-augsburg-91'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_25173">
+            <div style="position: relative;" class="ple_4" id="pelemId_25173">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/25173_3209_201581111554765.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/25173" target="_blank">Kuranyi</a>
+                <span class="vrn">Hoffenheim<br></span>
+                <span class="wert"><b>2,3</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(25173);return false;" href="#">merken</a>
+                <input value="{'splid':'25173','wert':'2300','pkt':'| PV: <b></b>','vrnid':'3209','vrn':'Hoffenheim','uefa':'1','spl':'Kuranyi','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/25173_3209_201581111554765.jpg','splf':'kevin-kuranyi','vrnf':'1899-hoffenheim-3209'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_30950">
+            <div style="position: relative;" class="ple_4" id="pelemId_30950">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/30950_98_2015859347989.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/30950" target="_blank">Sailer</a>
+                <span class="vrn">Darmstadt<br></span>
+                <span class="wert"><b>1,0</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(30950);return false;" href="#">merken</a>
+                <input value="{'splid':'30950','wert':'1000','pkt':'| PV: <b></b>','vrnid':'98','vrn':'Darmstadt','uefa':'1','spl':'Sailer','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/30950_98_2015859347989.jpg','splf':'marco-sailer','vrnf':'sv-darmstadt-98-98'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_36288">
+            <div style="position: relative;" class="ple_4" id="pelemId_36288">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/36288_98_2015859348325.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/36288" target="_blank">Stroh-Engel</a>
+                <span class="vrn">Darmstadt<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(36288);return false;" href="#">merken</a>
+                <input value="{'splid':'36288','wert':'2000','pkt':'| PV: <b></b>','vrnid':'98','vrn':'Darmstadt','uefa':'1','spl':'Stroh-Engel','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/36288_98_2015859348325.jpg','splf':'dominik-stroh-engel','vrnf':'sv-darmstadt-98-98'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_46591">
+            <div style="position: relative;" class="ple_4" id="pelemId_46591">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/46591_58_2015729103051812.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/46591" target="_blank">Erdinc</a>
+                <span class="vrn">Hannover<br></span>
+                <span class="wert"><b>2,8</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(46591);return false;" href="#">merken</a>
+                <input value="{'splid':'46591','wert':'2800','pkt':'| PV: <b></b>','vrnid':'58','vrn':'Hannover','uefa':'1','spl':'Erdinc','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/46591_58_2015729103051812.jpg','splf':'mevluet','vrnf':'hannover-96-58'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_49857">
+            <div style="position: relative;" class="ple_4" id="pelemId_49857">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/49857_7659_2015713113818510.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/49857" target="_blank">Hartmann</a>
+                <span class="vrn">Ingolstadt<br></span>
+                <span class="wert"><b>1,0</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(49857);return false;" href="#">merken</a>
+                <input value="{'splid':'49857','wert':'1000','pkt':'| PV: <b></b>','vrnid':'7659','vrn':'Ingolstadt','uefa':'1','spl':'Hartmann','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/49857_7659_2015713113818510.jpg','splf':'moritz-hartmann','vrnf':'fc-ingolstadt-04-7659'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_50485">
+            <div style="position: relative;" class="ple_4" id="pelemId_50485">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/50485_16_2015713113822536.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/50485" target="_blank">Hosiner</a>
+                <span class="vrn">Köln<br></span>
+                <span class="wert"><b>1,8</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(50485);return false;" href="#">merken</a>
+                <input value="{'splid':'50485','wert':'1800','pkt':'| PV: <b></b>','vrnid':'16','vrn':'Köln','uefa':'1','spl':'Hosiner','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/50485_16_2015713113822536.jpg','splf':'philipp-hosiner','vrnf':'1-fc-koeln-16'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_50531">
+            <div style="position: relative;" class="ple_4" id="pelemId_50531">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/50531_7659_2015713113822757.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/50531" target="_blank">Pekhart</a>
+                <span class="vrn">Ingolstadt<br></span>
+                <span class="wert"><b>0,6</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(50531);return false;" href="#">merken</a>
+                <input value="{'splid':'50531','wert':'600','pkt':'| PV: <b></b>','vrnid':'7659','vrn':'Ingolstadt','uefa':'1','spl':'Pekhart','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/50531_7659_2015713113822757.jpg','splf':'tomas-pekhart','vrnf':'fc-ingolstadt-04-7659'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_57267">
+            <div style="position: relative;" class="ple_4" id="pelemId_57267">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/57267_32_2015720145246812.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/57267" target="_blank">Castaignos</a>
+                <span class="vrn">E. Frankfurt<br></span>
+                <span class="wert"><b>2,8</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(57267);return false;" href="#">merken</a>
+                <input value="{'splid':'57267','wert':'2800','pkt':'| PV: <b></b>','vrnid':'32','vrn':'E. Frankfurt','uefa':'1','spl':'Castaignos','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/57267_32_2015720145246812.jpg','splf':'castaignos-luc','vrnf':'eintracht-frankfurt-32'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_63799">
+            <div style="position: relative;" class="ple_4" id="pelemId_63799">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/63799_12_2015729103055380.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/63799" target="_blank">Gregoritsch</a>
+                <span class="vrn">HSV<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(63799);return false;" href="#">merken</a>
+                <input value="{'splid':'63799','wert':'1200','pkt':'| PV: <b></b>','vrnid':'12','vrn':'HSV','uefa':'1','spl':'Gregoritsch','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/63799_12_2015729103055380.jpg','splf':'gregoritsch-michael','vrnf':'hamburger-sv-12'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_63803">
+            <div style="position: relative;" class="ple_4" id="pelemId_63803">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/63803_3209_2015715111347926.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/63803" target="_blank">Uth</a>
+                <span class="vrn">Hoffenheim<br></span>
+                <span class="wert"><b>1,6</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(63803);return false;" href="#">merken</a>
+                <input value="{'splid':'63803','wert':'1600','pkt':'| PV: <b></b>','vrnid':'3209','vrn':'Hoffenheim','uefa':'1','spl':'Uth','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/63803_3209_2015715111347926.jpg','splf':'uth-mark','vrnf':'1899-hoffenheim-3209'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_65794">
+            <div style="position: relative;" class="ple_4" id="pelemId_65794">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/65794_58_2015714154942907.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/65794" target="_blank">Benschop</a>
+                <span class="vrn">Hannover<br></span>
+                <span class="wert"><b>1,4</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(65794);return false;" href="#">merken</a>
+                <input value="{'splid':'65794','wert':'1400','pkt':'| PV: <b></b>','vrnid':'58','vrn':'Hannover','uefa':'1','spl':'Benschop','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/65794_58_2015714154942907.jpg','splf':'benschop-charlison','vrnf':'hannover-96-58'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_68111">
+            <div style="position: relative;" class="ple_4" id="pelemId_68111">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/68111_7659_2015713113838707.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/68111" target="_blank">Leckie</a>
+                <span class="vrn">Ingolstadt<br></span>
+                <span class="wert"><b>1,5</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(68111);return false;" href="#">merken</a>
+                <input value="{'splid':'68111','wert':'1500','pkt':'| PV: <b></b>','vrnid':'7659','vrn':'Ingolstadt','uefa':'0','spl':'Leckie','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/68111_7659_2015713113838707.jpg','splf':'leckie-matthew','vrnf':'fc-ingolstadt-04-7659'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_69159">
+            <div style="position: relative;" class="ple_4" id="pelemId_69159">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/69159_30_201571484658134.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/69159" target="_blank">Niederlechn.</a>
+                <span class="vrn">Mainz<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(69159);return false;" href="#">merken</a>
+                <input value="{'splid':'69159','wert':'2000','pkt':'| PV: <b></b>','vrnid':'30','vrn':'Mainz','uefa':'1','spl':'Niederlechn.','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/69159_30_201571484658134.jpg','splf':'niederlechner-florian','vrnf':'1-fsv-mainz-05-30'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_71013">
+            <div style="position: relative;" class="ple_4" id="pelemId_71013">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/71013_3209_2015715111349777.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/71013" target="_blank">Ochs</a>
+                <span class="vrn">Hoffenheim<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(71013);return false;" href="#">merken</a>
+                <input value="{'splid':'71013','wert':'200','pkt':'| PV: <b></b>','vrnid':'3209','vrn':'Hoffenheim','uefa':'1','spl':'Ochs','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/71013_3209_2015715111349777.jpg','splf':'ochs-philipp','vrnf':'1899-hoffenheim-3209'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_74767">
+            <div style="position: relative;" class="ple_4" id="pelemId_74767">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/74767_24_2015720145312824.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/74767" target="_blank">Stolze</a>
+                <span class="vrn">Wolfsburg<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(74767);return false;" href="#">merken</a>
+                <input value="{'splid':'74767','wert':'200','pkt':'| PV: <b></b>','vrnid':'24','vrn':'Wolfsburg','uefa':'1','spl':'Stolze','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/74767_24_2015720145312824.jpg','splf':'stolze-sebastian','vrnf':'vfl-wolfsburg-24'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_75480">
+            <div style="position: relative;" class="ple_4" id="pelemId_75480">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/library/image/fbm/player_nologo_41.gif" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/75480" target="_blank">Johannsson</a>
+                <span class="vrn">Bremen<br></span>
+                <span class="wert"><b>2,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(75480);return false;" href="#">merken</a>
+                <input value="{'splid':'75480','wert':'2200','pkt':'| PV: <b></b>','vrnid':'4','vrn':'Bremen','uefa':'1','spl':'Johannsson','pos':'4','bild':'http://mediadb.kicker.de/library/image/fbm/player_nologo_41.gif','splf':'johannsson-aron','vrnf':'werder-bremen-4'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_78491">
+            <div style="position: relative;" class="ple_4" id="pelemId_78491">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/78491_58_201581111563844.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/78491" target="_blank">Saint-Maxim.</a>
+                <span class="vrn">Hannover<br></span>
+                <span class="wert"><b>2,0</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(78491);return false;" href="#">merken</a>
+                <input value="{'splid':'78491','wert':'2000','pkt':'| PV: <b></b>','vrnid':'58','vrn':'Hannover','uefa':'1','spl':'Saint-Maxim.','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/78491_58_201581111563844.jpg','splf':'saint-maximin-allan','vrnf':'hannover-96-58'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_80091">
+            <div style="position: relative;" class="ple_4" id="pelemId_80091">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/80091_3209_201571511135213.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/80091" target="_blank">Mees</a>
+                <span class="vrn">Hoffenheim<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(80091);return false;" href="#">merken</a>
+                <input value="{'splid':'80091','wert':'200','pkt':'| PV: <b></b>','vrnid':'3209','vrn':'Hoffenheim','uefa':'1','spl':'Mees','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/80091_3209_201571511135213.jpg','splf':'mees-joshua','vrnf':'1899-hoffenheim-3209'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_80405">
+            <div style="position: relative;" class="ple_4" id="pelemId_80405">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/80405_32_2015720145321756.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/80405" target="_blank">Bunjaki</a>
+                <span class="vrn">E. Frankfurt<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(80405);return false;" href="#">merken</a>
+                <input value="{'splid':'80405','wert':'200','pkt':'| PV: <b></b>','vrnid':'32','vrn':'E. Frankfurt','uefa':'1','spl':'Bunjaki','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/80405_32_2015720145321756.jpg','splf':'bunjaki-enis','vrnf':'eintracht-frankfurt-32'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_81998">
+            <div style="position: relative;" class="ple_4" id="pelemId_81998">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/81998_7659_201571311395869.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/81998" target="_blank">Hinterseer</a>
+                <span class="vrn">Ingolstadt<br></span>
+                <span class="wert"><b>1,8</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(81998);return false;" href="#">merken</a>
+                <input value="{'splid':'81998','wert':'1800','pkt':'| PV: <b></b>','vrnid':'7659','vrn':'Ingolstadt','uefa':'1','spl':'Hinterseer','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/81998_7659_201571311395869.jpg','splf':'hinterseer-lukas','vrnf':'fc-ingolstadt-04-7659'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_85393">
+            <div class="ple_4_clone" id="pelemId_85393_clone">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/85393_12_2015720145323717.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/85393" target="_blank">Altintas</a>
+                <span class="vrn">HSV<br></span>
+                <span class="wert"><b>0,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(85393);return false;" href="#">merken</a>
+                <input value="{'splid':'85393','wert':'200','pkt':'| PV: <b></b>','vrnid':'12','vrn':'HSV','uefa':'1','spl':'Altintas','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/85393_12_2015720145323717.jpg','splf':'altintas-batuhan','vrnf':'hamburger-sv-12'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_85792">
+            <div style="position: relative;" class="ple_4" id="pelemId_85792">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/85792_30_20157148478265.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/85792" target="_blank">Muto</a>
+                <span class="vrn">Mainz<br></span>
+                <span class="wert"><b>2,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(85792);return false;" href="#">merken</a>
+                <input value="{'splid':'85792','wert':'2200','pkt':'| PV: <b></b>','vrnid':'30','vrn':'Mainz','uefa':'0','spl':'Muto','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/85792_30_20157148478265.jpg','splf':'muto-yoshinori','vrnf':'1-fsv-mainz-05-30'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_87635">
+            <div style="position: relative;" class="ple_4" id="pelemId_87635">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/87635_4_2015859355166.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/87635" target="_blank">Manneh</a>
+                <span class="vrn">Bremen<br></span>
+                <span class="wert"><b>0,5</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(87635);return false;" href="#">merken</a>
+                <input value="{'splid':'87635','wert':'500','pkt':'| PV: <b></b>','vrnid':'4','vrn':'Bremen','uefa':'0','spl':'Manneh','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/87635_4_2015859355166.jpg','splf':'ousman-manneh','vrnf':'werder-bremen-4'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_89017">
+            <div style="position: relative;" class="ple_4" id="pelemId_89017">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/89017_3209_2015715111352241.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/89017" target="_blank">Joelinton</a>
+                <span class="vrn">Hoffenheim<br></span>
+                <span class="wert"><b>0,4</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(89017);return false;" href="#">merken</a>
+                <input value="{'splid':'89017','wert':'400','pkt':'| PV: <b></b>','vrnid':'3209','vrn':'Hoffenheim','uefa':'0','spl':'Joelinton','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/89017_3209_2015715111352241.jpg','splf':'joelinton','vrnf':'1899-hoffenheim-3209'}" type="hidden">
+            </div>
+        </div>
+
+        <div class="pli" id="pli_89052">
+            <div style="position: relative;" class="ple_4" id="pelemId_89052">
+                <img class="pliimg imgMove" src="http://mediadb.kicker.de/2016/fussball/managerspiel/s/89052_11_2015720145324930.jpg" alt="">
+                <a class="plink" href="/interactive/bundesliga/meinteam/spieleranalyse/spielerid/89052" target="_blank">Kliment</a>
+                <span class="vrn">VfB<br></span>
+                <span class="wert"><b>1,2</b> Mio</span><span class="pkt">| PV: <b></b></span><br>
+                <a class="merk" onclick="ovFbmMerkAddSpl(89052);return false;" href="#">merken</a>
+                <input value="{'splid':'89052','wert':'1200','pkt':'| PV: <b></b>','vrnid':'11','vrn':'VfB','uefa':'1','spl':'Kliment','pos':'4','bild':'http://mediadb.kicker.de/2016/fussball/managerspiel/s/89052_11_2015720145324930.jpg','splf':'jan-kliment','vrnf':'vfb-stuttgart-11'}" type="hidden">
+            </div>
+        </div>
+
+
+
+
+</div>
+ <div class="slidcontBL"></div>
+ <div class="slidcontBR"></div>
+ </div>
+
+ <div class="playerslider-container" id="playerslider-container">
+ <a href="#" onclick="ovTeamSliderSetValue(1,'l');return false;"><img class="slide-left" src="http://mediadb.kicker.de/library/image/fbm/slider-links.gif" alt=""></a>
+ <div id="slidebar" class="sliderbar">
+ <img id="myslider" class="handle selected" style="width: 111px; left: 0px; position: relative;" src="http://mediadb.kicker.de/library/image/fbm/slider-button.png" alt="">
+ </div>
+ <a href="#" onclick="ovTeamSliderSetValue(1,'r');return false;"><img class="slide-right" src="http://mediadb.kicker.de/library/image/fbm/slider-rechts.gif" alt=""></a>
+ </div>
+ </div>
+ <div class="legende">* PG = Punkte gesamt</div>
+
